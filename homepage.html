@@ -1,0 +1,308 @@
+<!--
+Web Designer: Daniel Constantine
+Date: February 23, 2016
+Description: This was my project for my Web Design class for Web Design Certificate at Baruch College
+		This is the index page and only Komodo Island and Bali page that are accessable. 
+		I do not own the images I use here. All rights reserved to their original creator.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sparkling Indonesia</title>
+        
+        <meta charset="UTF-8">
+                
+        <meta name="description" content="The cheapest Indonesia travel agency on the internet">
+        
+        <meta name="keywords" content= "travel agency, Indonesia, cheap">
+        
+        <meta name="author" content= "Daniel Constantine">
+        
+        <style> 
+            html, body, p, img, ul, li {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+	            box-sizing: border-box;
+            }
+           
+            main {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                position: relative;
+            }
+            
+            header{
+                width: 80%;
+                max-width: 1180px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            
+            header img{
+                display: inline-block;
+                float: left;
+                width: 150px;
+                height: auto;
+            }
+            
+            header:after{
+                display: block;
+                content: "";
+                clear: both;
+            }
+            
+            header > nav {
+                display: table;
+                table-layout: fixed;
+                width: calc(100% - 150px);  
+                padding-top: 4em;
+                 
+            }
+            
+            header > nav ul{
+                list-style: none;
+                
+            }
+            
+            header > nav > ul{
+	           display: table-row;
+                
+            }
+
+            header > nav > ul > li{
+                text-align: center;
+	            display: table-cell;
+	            padding: 15px;
+                border-radius: 5px;
+                font-family: "Verdana", "Arial Black", sans-serif;
+                font-size: 18px;
+            }
+            
+            header > nav li{
+                position: relative;
+                padding: 15px;
+                
+            }
+            
+            header > nav li ul{
+                position: absolute;
+                text-align: center;
+                top: 100%;
+				left: 0;
+                display: none;
+                z-index: 2;
+                
+            }
+            
+            header > nav li:hover ul{
+	           display: block;
+            }
+
+            header > nav a{
+                display: block;
+                text-decoration: none;
+				font-size: 16px;
+				padding: 10px;
+				background: #C00000;
+                border-radius: 10px;
+            }
+            
+            header > nav a:hover{
+                background:#FF0000;
+            }
+                
+			.banner {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+				
+            .start {
+                text-align: center;
+                margin-left: 81.7%;
+                margin-bottom: 5px;
+                background: #C00000 ;
+                color: white;   
+                cursor: pointer;
+                width: 200px;
+                font-size: 28px;
+                font-family: "Verdana", "Arial Black", sans-serif;
+                border-radius: 10px;
+            }
+            
+            .start:hover {
+                background: #FF0000 ;
+                color: white;
+            }
+                       
+            main {
+                width: 80%;
+                max-width: 1200px;
+                min-height: 100%;
+                margin: 0 auto;
+            }
+            
+            .mainDiv > div{
+                float: left;
+                width: 30%;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+            }
+            
+            .mainDiv > div h3 {
+                background: #C00000;
+                color: white;
+                width: 200px;
+                text-align: center;
+                font-family: "Verdana", "Arial Black", sans-serif;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            
+            p {
+                font-family: "Verdana", "Arial Black", sans-serif;
+                text-align: justify;    
+            }
+            
+            .mainDiv > div h3:hover {
+                background: #FF0000;
+            }
+            
+            .mainDiv:after{
+                content: "";
+                display: table;
+                clear: both;
+                padding-bottom: 100px;
+            }
+            
+            .mainDiv img{
+                width: 100%;
+                height: 210px;
+            }
+            
+            footer {
+                background:#950000;
+                padding: 10px;
+                position:absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            
+            footer p{
+                font-family: Arial;
+                text-align: center;
+                font-size: 15px;
+                color: white;
+            }
+            
+            a {
+                text-decoration: none;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="http://s8.postimg.org/cn75xayxx/logo.png" alt="Sparkling Indonesia logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#">About Us</a>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Founder</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Package Trips</a>
+                        <ul>
+                            <li><a href="#">2D 1N</a></li>
+                            <li><a href="#">3D 2N</a></li>
+                            <li><a href="#">4D 3N</a></li>
+                            <li><a href="#">5D 4N</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Costumer Reviews</a></li>
+                    <li><a href="#">Contact Us</a></li>        
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <img src="http://s12.postimg.org/t2qt2pfm5/banner.jpg" alt="Sparkling Indonesia Banner">
+            </div>
+			<div class="start"> START </div>
+            <div class="mainDiv">
+                <div>
+                    <img src="http://s10.postimg.org/b3hwhcbnt/bali_Copy.jpg" alt="Bali">
+                    <a href=page2.HTML><h3>Bali</h3></a>
+                    <p>Bali is magical. As probably the most famous island in Indonesia, Bali blends spectacular mountain scenery and beautiful beaches with warm and friendly people, a vibrant culture and out of this world resorts.</p>
+                </div>
+                
+                <div>
+                    <img src="http://s27.postimg.org/6pfazr7rn/blue_fire.jpg" alt="Blue Fire on Ijen Mountain">
+                    <h3>Ijen Mountain</h3>
+                    <p>Ijen plateau or known as "Kawah Ijen" is highly recommended to mountain buffs and hikers.  The magnificent turquoise sulfur lake of Kawah Ijen lies at 2148 m above sea level and is surrounded by the volcanos sheer crater walls. </p>
+                </div>
+                
+                <div>
+                    <img src="http://s27.postimg.org/91rwb39qr/sulawesi.jpg" alt="Snorkeling in Bunaken">
+                    <h3>Bunaken</h3>
+                    <p>Ever fancy yourself being a mermaid? Being able to swim along with other creatures of the sea , moving to the rhythm of the waves? In the Bunaken Marine Park, you will encounter a real “mermaid”, and you can also get a glimpse of sea life here.</p>
+                </div>
+                
+                <div>
+                    <img src="http://s10.postimg.org/hfx1r6eq1/komodo_Copy.jpg" alt="Komodo Island">
+                    <a href="page3.HTML"><h3>Komodo Island</h3></a>
+                    <p>Real dragons spurt no fire, have no need to fly and cast no magic spells. And still, one look from them might render you speechless. These komodos, the real life dragons, is an endangered species which can only be found in the Komodo National Park (KNP) in East Nusa Tenggara (NTT)</p>
+                </div>
+                
+                <div>
+                    <img src="http://s27.postimg.org/sm1u04kyb/bromo.jpg" alt="Bromo Mountain">
+                    <h3>Bromo Mountain</h3>
+                    <p>Mount Bromo is a part of the Bromo Tengger Semeru National Park that covers a massive area of 800 square kilometres. While it may be small when measured against other volcanoes in Indonesia, the magnificent Mt Bromo will not disappoint with its spectacular views and dramatic landscapes. </p>
+                </div>
+                
+                 <div>
+                     <img src="http://s27.postimg.org/875cp21w3/beach.jpg" alt="Gili Island">
+                     <h3>Gili Island</h3>
+                     <p>White sandy beaches. Tropical coral reefs. Warm inviting waters. All this awaits you on the Gili islands.  Gili islands are truly an ideal destination for a tropical getaway. Offering spectacular reefs and ominous dive sites like Shark reef, the Gili islands are the perfect escape for anyone wanting to get away to beautiful, natural and relaxing surrounds. </p>
+                </div>
+                
+                 <div>
+                     <img src="http://s27.postimg.org/5tney1ngz/raja_ampat.jpg" alt="Raja Ampat">
+                     <h3>Raja Ampat</h3>
+                     <p>The roaring engines fixed to a large wooden boat are finally quiet. Nothing can be heard but the rifting little waves, lapping against the vibrant paint on the sides of the vessel that gracefully slows down. Native birds hop on the tip of a small tree in one of the deserted islands in the distance.</p>
+                </div>
+                
+                 <div>
+                     <img src="http://s10.postimg.org/3xq5ew2kp/kalimantan_Copy.jpg" alt="Borneo">
+                     <h3>Borneo</h3>
+                     <p>The indigenous people inhabiting the dense tropical rainforests of Borneo are collectively called the Dayaks, but in fact they comprise many tribes that are diverse in culture as well as in language. The word “Dayak” actually means “inland” or “upriver”, especially where the Indonesian part of Borneo is cut by many long and wide rivers.  </p>
+                </div>
+                
+                <div>
+                    <img src="http://s27.postimg.org/uyefbgmxf/kota_lain.jpg" alt="Jakarta">
+                    <h3>Jakarta</h3>
+                    <p>Capital of the Republic of Indonesia , Jakarta is a huge, sprawling metropolis, home to 9 million people. During the day the number increases with another 2 million as commuters make their way to work in the city, and flock out again in the evenings.  .</p>
+                </div>
+            </div>
+            <footer>
+                <p> Copyright © 2016 Sparkling Indonesia. All Rights Reserved</p>
+            </footer>
+        </main>
+        
+    </body>
+</html>

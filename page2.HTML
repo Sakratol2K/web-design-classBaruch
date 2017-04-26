@@ -1,0 +1,105 @@
+<!--
+Web Designer: Daniel Constantine
+Date: February 23, 2016
+Description: This was my project for my Web Design class for Web Design Certificate at Baruch College
+		This is the code for Bali page. 
+		I do not own the images I use here. All rights reserved to their original creator.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sparkling Indonesia - Bali </title>
+        <meta charset="UTF-8">                
+        <meta name="description" content="Travelling in Bali with cheap price">
+        <meta name="keywords" content= "travel agency, Indonesia, cheap, Bali">        
+        <meta name="author" content= "Daniel Constantine">        
+        <link href="page2page3.css" rel="stylesheet" type="text/css" />
+    </head>    
+    <body>
+        <header>
+            <div><a href="homepage.html"><img src="http://s8.postimg.org/cn75xayxx/logo.png" alt="Sparkling Indonesia logo"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#">About Us</a>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Founder</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Package Trips</a>
+                        <ul>
+                            <li><a href="#">2D 1N</a></li>
+                            <li><a href="#">3D 2N</a></li>
+                            <li><a href="#">4D 3N</a></li>
+                            <li><a href="#">5D 4N</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Costumer Reviews</a></li>
+                    <li><a href="#">Contact Us</a></li>        
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="banner">
+                <hr>
+                <img src="http://s7.postimg.org/ugg1awlq3/revisi.jpg" alt="Bali Island">
+                <hr>
+            </div>
+                        
+            <div class="firstRow">
+                
+               <div class="imageLeft">
+                    <img src="http://cdnx.jetcdn.com/static/dimg/rlWgMKEuMTS0LFV6rlWmnKcyVwc7VaqcMUEbVwbkZmNjYPWbMJyanUDvBwL1ZU19YPWjLKEbVwbvnJ1uM2ImY3Olo2E1L3DipUWipTIlqTyypl8mZmxlY3Olo3NgAwNkAwNgZGZ5AGV1ZmD0AF1mpzZhnaOaVvjvqzIlp2yiovV6VvW9" alt="Holy Spring Water Temple">
+                </div>
+                
+               <div>
+                    <button class="showText">OVERVIEW</button>
+                        <div class="panel">
+                            <p> Bali is magical. As probably the most famous island in Indonesia, Bali blends spectacular mountain scenery and beautiful beaches with warm and friendly people, a vibrant culture and out of this world resorts.</p>
+                            <br>
+                            <p>Travel and Leisure Magazine has awarded Bali the World’s Best Island in 2009, while the Lonely Planet’s Best of Travel 2010 ranked Bali second place among the world’s Top Regions.</p>
+                        </div>
+                </div> 
+            </div>
+            
+            <div class="secondRow">
+                <div>
+                    <button class="showText">TIPS</button>
+                        <div class="panel">
+                            <p> Remember to "hoot" your horn when going around curves on mountainous roads as it is very common to drive in the middle of the road here. There are a lot of one way roads in Bali. If you miss your turn off you may have to drive quite a distance before being able to turn back. Be alert!</p>
+                            <br>
+                            <p>We highly recommend you fill up at any of the numerous government owned petrol stations. In more remote areas at stalls by the side of the road sell bottles of clear liquid. The quality may not be as good as at the petrol station and could cause damage to the rental car.</p>
+                            <br>
+                            <p>If you're in a serene highland like Ubud, forget starred hotels. You're there to embrace the atmosphere. Just pick one of the small lodgings lining up the streets. And even the smallest one's ready to make you feel welcome.</p>
+                            
+                        </div>
+                </div>
+                    
+                <div class="imageRight">
+                    <img src="http://s7.postimg.org/egxdrcpob/bali_revisi.jpg" alt="Beach Attraction">
+                </div>
+            </div>
+			<footer>
+				<div>
+					<p> Copyright © 2016 Sparkling Indonesia. All Rights Reserved</p>
+				</div>
+        </footer>
+        </main>         
+        <script>
+            var acc = document.getElementsByClassName("showText");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function(){
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                 }
+                }
+        </script>
+    </body>
+    
+</html>

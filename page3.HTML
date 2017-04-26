@@ -1,0 +1,108 @@
+<!--
+Web Designer: Daniel Constantine
+Date: February 23, 2016
+Description: This was my project for my Web Design class for Web Design Certificate at Baruch College
+		This is the code for Komodo Island page. 
+		I do not own the images I use here. All rights reserved to their original creator.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sparkling Indonesia - Komodo Island </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Travelling in Komodo Island with cheap price">
+        <meta name="keywords" content= "travel agency, Indonesia, cheap, Komodo Island">        
+        <meta name="author" content= "Daniel Constantine">
+        <link href="page2page3.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div><a href="homepage.html"><img src="http://s8.postimg.org/cn75xayxx/logo.png" alt="Sparkling Indonesia logo"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#">About Us</a>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Founder</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Package Trips</a>
+                        <ul>
+                            <li><a href="#">2D 1N</a></li>
+                            <li><a href="#">3D 2N</a></li>
+                            <li><a href="#">4D 3N</a></li>
+                            <li><a href="#">5D 4N</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Costumer Reviews</a></li>
+                    <li><a href="#">Contact Us</a></li>        
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="banner">
+                <hr>
+                <img src="http://s7.postimg.org/r4kpb9jqj/komodo.jpg" alt="Komodo">
+                <hr>
+            </div>
+                        
+            <div class="firstRow">
+                
+                <div class="imageLeft">
+                    <img src="http://s28.postimg.org/aaw31396l/komodooo_Copy.jpg" alt="Bunch of Komodo">
+                </div>
+                
+                <div>
+                    <button class="showText">OVERVIEW</button>
+                        <div class="panel">
+                            <p> Real dragons spurt no fire, have no need to fly and cast no magic spells. And still, one look from them might render you speechless. These komodos, the real life dragons, are a sight indeed. Gigantic, the lizard-like creatures are about two or three meters in length. They can easily weigh about 165 kilograms. Despite of their sheer size and appearance, they are not active hunters. What makes them intimidating is the fact that they are a patient predator. </p>
+                        </div>
+                </div> 
+            </div>
+            
+            <div class="secondRow">
+                <div>
+                    <button class="showText">TIPS</button>
+                        <div class="panel">
+                            <p>Don't walk alone. It is best to walk around with a ranger or guide.</p>
+                            <br>
+                            <p> Don't disturb or feed komodos. Despite slow and lazy movement, this animal can suddenly turn aggresive and move fast.</p>
+                            <br>
+                            <p>When trekking, please take a stick with you. Komodos are usually afraid when threatened with a stick.</p>
+                            <br>
+                            <p>Women having their menstruation must report to a guide or ranger for special attention. Komodos have a very strong sense of smell and may turn agresive when they smell blood.</p>
+                            <br>
+                            <p>Please bring along your insect repellant because this area has many mosquitoes who'll be excited at the prospects of having fresh blood.</p>
+                            <br>
+                            <p>Most lands on Komodo and Rinca islands are savannas which are prone to fire during the dry season so smoking and making fires are prohibited.</p>
+                        </div>
+                </div>
+                
+                <div class="imageRight">
+                    <img src="http://s18.postimg.org/f2bur19y1/Komodo_again.jpg" alt="Komodo Fighting">
+                </div>
+            </div>
+			<footer>
+				<div>
+					<p>Copyright © 2016 Sparkling Indonesia. All Rights Reserved</p>
+				</div>
+        </footer>
+        </main>
+       
+        <script>
+            var acc = document.getElementsByClassName("showText");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function(){
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                 }
+                }
+        </script>
+    </body>
+    
+</html>
